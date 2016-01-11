@@ -1,0 +1,22 @@
+div.navbar.navbar-inverse.navbar-fixed-top
+  div.navbar-header
+      button.btn.btn-navbar(type='button', class='navbar-toggle', data-toggle='collapse', data-target='.nav-collapse')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a(class='navbar-brand navbar-center', href='/') health.mate
+      div.navbar-collapse.collapse
+        ul(class='nav navbar-nav navbar-left')
+          li
+            a(href='/') Home
+          li
+            a(href='/about') About
+        ul(class='nav navbar-nav navbar-right')
+          if typeof user != 'undefined'
+            li 
+              a(href="/logout") Logout
+          else
+            li
+              a(href='/register') Signup
+            li
+              a(href='/login') Login

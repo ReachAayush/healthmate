@@ -1,0 +1,12 @@
+motivation
+architecture
+
+100times timing stats
+
+intro -> non ft version (default version) -> ft version -> stats -> conclusion
+
+Poster:
+Motivation sq1
+Architecture sq2 (both versions)
+Demo sq3 (what is active, passive)
+Experimental Evaluation sq4

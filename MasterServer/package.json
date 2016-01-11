@@ -1,0 +1,11 @@
+{
+  "name": "masterserver",
+  "description": "Coordination Server",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "latest",
+    "log4js": "*"
+  }
+}
+
+ 

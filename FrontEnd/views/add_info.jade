@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .container
+    h1 Importing Hospital Info
+    p.lead Get your records from your hospital!
+    br
+    form(role='form', action="/add_info",method="post", style='max-width: 300px;')
+      h4 Pick a hospital
+      select(name='hospital')
+        each hospital in hospitals
+          option(value=hospital.hospital_name) #{hospital.hospital_name}
+      .form-group
+          input.form-control(type='text', name="username", placeholder='Enter Hospital Account Username')
+      .form-group
+        input.form-control(type='password', name="password", placeholder='Password')
+      button.btn.btn-default(type='submit') Submit
